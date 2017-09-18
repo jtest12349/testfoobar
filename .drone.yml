@@ -4,4 +4,4 @@ pipeline:
     commands:
       - pip install awscli
       - aws ec2 describe-instances
-
+    secrets: [ecr_access_key, ecr_secret_key]
